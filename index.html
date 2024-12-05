@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dat.lgbt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="justify-content: center; display: flex;" id="logoWrap">
+        <a href="">
+            <img src="kid-cat-dance.gif" style="mix-blend-mode: hard-light; opacity: 95%; z-index: -1; margin-top: 20px;"
+                width="300px" id="logo">
+        </a>
+    </div>
+
+    <div style="justify-content: center; display: flex;">
+        <a href="https://soundcloud.com/datsal" class="hover-link">
+            <p class="button">music</p>
+        </a>
+        <a href="https://instagram.com/datsalfolks" class="hover-link">
+            <p class="button">instagram</p>
+        </a>
+        <a href="https://x.com/datsalfolks" class="hover-link">
+            <p class="button">twitter</p>
+            <p style="position: absolute; top: -3px; left: 5px; rotate: -20deg; color: white; font-size: 90%; width: 100px; z-index: 2; font-family: 'Comic Sans MS', cursive; animation: pulsate 1s infinite; text-align: center;line-height:10px;">
+                active<br>4evr</p>
+        </a>
+    </div>
+
+    <div style="justify-content: center; display: flex;">
+        <div class="window active" style="max-width: 100%; margin: 0 1.5em; --window-background-color: #55c147;">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    <span>Speedometer. - Private (2000)</span>
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <div style="justify-content: center; display: flex; margin: -6px;">
+                    <iframe width="560" height="420" src="https://www.youtube.com/embed/QKCgsu9p30Q?si=I_QcHLHauXXp-jMb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var names = ["cottonclub.cc"];
+    document.title = "cottonclub.cc";
+
+    function changeTitle() {
+        var index = 0;
+        setInterval(function () {
+            document.title = names[index];
+            index = (index + 1) % names.length;
+        }, 750);
+    }
+    changeTitle();
+</script>
+
+</html>
