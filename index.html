@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="window-body has-space" style="display:flex;justify-content:center;padding:0;">
-                <div class="youtube-placeholder" style="position:relative;cursor:pointer;width:560px;height:315px;background:#000;">
+                <div class="youtube-placeholder" style="position:relative;cursor:pointer;width:576px;height:432px;background:#000;">
                     <img 
                         src="https://img.youtube.com/vi/QlmO_aevrgA/maxresdefault.jpg" 
                         alt="Video Thumbnail" 
@@ -49,8 +49,8 @@
         document.querySelector('.youtube-placeholder').addEventListener('click', function () {
             const iframe = document.createElement('iframe');
             iframe.style.border = '0';
-            iframe.width = '560';
-            iframe.height = '315';
+            iframe.width = '576';
+            iframe.height = '432';
             iframe.src = "https://www.youtube.com/embed/QlmO_aevrgA?rel=0&autoplay=1";
             iframe.title = "YouTube video player";
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
