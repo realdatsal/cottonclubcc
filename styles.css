@@ -10,5 +10,11 @@
     border-radius: 5px; /* Optional: Rounded edges */
     font-size: 16px; /* Optional: Text size */
 }
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 88px);
+  gap: 6px;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=7.css.map */
